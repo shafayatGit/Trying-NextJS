@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Navber from "@/Components/Navber/Navber";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +24,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Navber></Navber>
+        <main className="place-content-center place-items-center max-w-7xl mx-auto h-screen ">{children}</main>
+        <footer>
+          <h1>This is footer</h1>
+        </footer>
       </body>
     </html>
   );
