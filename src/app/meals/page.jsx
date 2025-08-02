@@ -3,6 +3,11 @@
 import { setConfig } from "next/config";
 import { useEffect, useState } from "react";
 
+export const metadata = {
+  title: "Meals || Learning NextJS",
+  description: "Learning next app",
+};
+
 export default function MealsPage() {
   const [meals, setMeals] = useState([]);
   const [search, setSearch] = useState("");

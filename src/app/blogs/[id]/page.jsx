@@ -1,4 +1,11 @@
 import React from "react";
+
+export const metadata = {
+  title: "Blog || Learning NextJS",
+  description: "Learning next app",
+};
+
+
 const getSinglePost = async (id) => {
   const data = await fetch(
     `https://jsonplaceholder.typicode.com/users/${id}`
@@ -12,7 +19,7 @@ export default async function singlePost({ params }) {
   // console.log(data)
   return (
     <div>
-      <div className="border rounded-2xl p-4">
+      <div className="border border-gray-500 rounded-2xl p-4">
         <h1>Name: {data.name}</h1>
         <h1>UserName: {data.username}</h1>
         <h1>Email: {data.email}</h1>

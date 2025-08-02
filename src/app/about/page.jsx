@@ -3,6 +3,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
+// export const metadata = {
+//   title: "About || Learning NextJS",
+//   description: "Learning next app about sec",
+// };
+
 const about = () => {
     const router = useRouter()
     const handleGoAddress=()=>{

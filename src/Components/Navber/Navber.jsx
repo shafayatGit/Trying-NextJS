@@ -15,6 +15,9 @@ const Navber = () => {
         <li>
           <Link href={"/blogs"}>Blogs</Link>{" "}
         </li>
+        <li>
+          <Link href={"/meals"}>Meals</Link>{" "}
+        </li>
       </ul>
     </div>
   );
