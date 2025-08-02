@@ -1,6 +1,6 @@
 "use client";
 
-import { setConfig } from "next/config";
+// import { setConfig } from "next/config";
 import { useEffect, useState } from "react";
 
 export const metadata = {
